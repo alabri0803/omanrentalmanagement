@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% load i18n static %}
+
+{% block content %}
+<div class="container rtl-content">
+    <form method="post" class="auth-form">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">{% trans 'تسجيل الدخول' %}</button>
+    </form>
+</div>
+{% endblock %}

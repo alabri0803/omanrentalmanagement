@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-t&yqfekxfz+*ol56&ood$i-j-9^l_6_ov$uq==$(^k6o3t8rom
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -37,7 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'users',
+    'apps.users',
     'buildings',
     'units',
     'contracts',
@@ -148,3 +148,4 @@ MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 LOCALE_PATHS = [os.path.join(BASE_DIR, 'locale')]
+AUTH_USER_MODEL = 'users.User'
