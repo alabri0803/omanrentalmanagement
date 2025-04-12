@@ -9,9 +9,8 @@ from .models import User
 
 @receiver(post_save, sender=User)
 def handle_user_creation(sender, instance, created, **kwargs):
-    if created:
-        if instance.email:
-            send_verification_email(instance)
+    if created and instance.email:
+        send_verification_email(instance)
 
     if hasattr(instance, 'profile'):
         return Profile.objects.create(user=instance)
