@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-04-12 00:59+0400\n"
+"POT-Creation-Date: 2025-04-12 13:37+0400\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,6 +18,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
 "&& n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5;\n"
+
 #: .\apps\users\admin.py:10
 msgid "المعلومات الشخصية"
 msgstr ""
@@ -38,7 +39,7 @@ msgstr ""
 msgid "إدارة المستخدمين"
 msgstr ""
 
-#: .\apps\users\forms.py:11
+#: .\apps\users\forms.py:11 .\apps\users\models.py:21
 msgid "نوع المستخدم"
 msgstr ""
 
@@ -50,27 +51,63 @@ msgstr ""
 msgid "كلمة المرور"
 msgstr ""
 
-#: .\apps\users\models.py:7
+#: .\apps\users\models.py:9
 msgid "مالك العقار"
 msgstr ""
 
-#: .\apps\users\models.py:8
-msgid "مستثمر"
-msgstr ""
-
-#: .\apps\users\models.py:9
-msgid "مستأجر"
-msgstr ""
-
 #: .\apps\users\models.py:10
-msgid "شركة"
+msgid "مستثمر مؤجرة"
 msgstr ""
 
-#: .\apps\users\models.py:19
+#: .\apps\users\models.py:11
+msgid "شركة مستأجرة"
+msgstr ""
+
+#: .\apps\users\models.py:14
+msgid "عماني"
+msgstr ""
+
+#: .\apps\users\models.py:15
+msgid "خليجي"
+msgstr ""
+
+#: .\apps\users\models.py:16
+msgid "أجنبي"
+msgstr ""
+
+#: .\apps\users\models.py:26
+msgid "رقم الهاتف يجب أن يكون بتنسيق:'+96812345678'"
+msgstr ""
+
+#: .\apps\users\models.py:32
+msgid "رقم الهاتف"
+msgstr ""
+
+#: .\apps\users\models.py:39
+msgid "اسم الشركة"
+msgstr ""
+
+#: .\apps\users\models.py:46
+msgid "جنسية الشركة"
+msgstr ""
+
+#: .\apps\users\models.py:52
+msgid "السجل التجاري"
+msgstr ""
+
+#: .\apps\users\models.py:56
+msgid "حساب موثوق"
+msgstr ""
+
+#: .\apps\users\models.py:62
+msgid "اللغة المفضلة"
+msgstr ""
+
+#: .\apps\users\models.py:66
 msgid "مستخدم"
 msgstr ""
 
-#: .\apps\users\models.py:20
+#: .\apps\users\models.py:67
 msgid "المستخدمون"
 msgstr ""
 
